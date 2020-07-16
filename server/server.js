@@ -9,11 +9,8 @@ const app = express();
 
 // db
 mongoose
-    .connect(process.env.DATABASE_CLOUD, { useNewUrlParser: true, useUnifiedTopology: true,useCreateIndex: true
-    })
-
-    
-    .then(() => console.log('DB connected'))
+.connect(process.env.DATABASE_CLOUD, { useNewUrlParser: true, useUnifiedTopology: true ,useCreateIndex: true})
+.then(() => console.log('DB connected'))
     .catch(err => console.log(err));
 
 // import routes
