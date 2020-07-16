@@ -14,7 +14,6 @@ const Register = () => {
         error: '',
         success: '',
         buttonText: 'Register'
-
     });
 
     const { name, email, password, error, success, buttonText } = state;
