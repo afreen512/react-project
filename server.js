@@ -18,6 +18,8 @@ mongoose
     .then(() => console.log('DB connected'))
     .catch(err => console.log(err));
 
+    const DATABASE_URL = process.env.DATABASE_CLOUD || 'mongodb+srv://nazli:nazli123@cluster0.7uhxo.mongodb.net/test?retryWrites=true&w=majority';
+
 // import routes
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
@@ -36,6 +38,11 @@ app.use('/api', authRoutes);
 app.use('/api', userRoutes);
 app.use('/api', categoryRoutes);
 app.use('/api', linkRoutes);
+
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+  }
 
 const port = process.env.PORT || 8000;
 app.listen(port, () => console.log(`API is running on port ${port}`));
