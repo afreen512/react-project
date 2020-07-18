@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "start": "npm react-scripts ",
+    "start": " react-scripts start ",
     "build": "react-scripts build"
   },
   "keywords": [],
