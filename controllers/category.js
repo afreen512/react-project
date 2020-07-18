@@ -2,7 +2,7 @@ const Category = require('../models/category');
 const Link = require('../models/link');
 const slugify = require('slugify');
 const formidable = require('formidable');
-const uuidv4 = require('uuid/v4');
+const uuidv4 = require('uuid');
 const AWS = require('aws-sdk');
 const fs = require('fs');
 

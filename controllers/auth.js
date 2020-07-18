@@ -113,7 +113,7 @@ exports.login = (req, res) => {
     });
 };
 
-exports.requireSignin = expressJwt({ secret: process.env.JWT_SECRET }); // req.user
+exports.requireSignin = expressJwt({ secret:  process.env.JWT_SECRET, algorithms: ['RS256'] }); // req.user
 
 exports.authMiddleware = (req, res, next) => {
     const authUserId = req.user._id;

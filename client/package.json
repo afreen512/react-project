@@ -1,11 +1,9 @@
 {
-  "name": "aws-pro",
+  "name": "node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines":{
-    "npm": "6.12.0"
-  },
+
   "scripts": {
     "dev": "next",
     "build": "next build",
