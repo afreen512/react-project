@@ -30,12 +30,10 @@
     "react-scripts": "^3.4.1",
     "shortid": "^2.2.15",
     "slugify": "^1.4.4",
-    "uuid": "^8.2.0"
+    "uuid": "^8.2.0",
+    "concurrently": "^5.2.0"
   },
   "engines": {
     "node": ">=10.0.0"
-  },
-  "devDependencies": {
-    "concurrently": "^5.2.0"
   }
 }
