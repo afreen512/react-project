@@ -41,7 +41,7 @@ app.use('/api', linkRoutes);
 
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'));
+    app.use(express.static('client/.next/static'));
   }
 
 const port = process.env.PORT || 8000;
